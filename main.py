@@ -87,7 +87,7 @@ with model_inference:
 
     def upload_image():
         # Upload and display the image
-        uploaded_image = st.file_uploader("Upload an image (chest X-ray image only)", type=["jpg", "jpeg", "png"])
+        uploaded_image = st.file_uploader("Upload an image (chest X-ray image only_CXR)", type=["jpg", "jpeg", "png"])
         if uploaded_image is not None:
             image = Image.open(uploaded_image)
             # Convert grayscale image to RGB
